@@ -14,7 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",  // Set base URL to root project
+    "paths": {
+      "declarations/backend": ["./declarations/backend.d.ts"]  // Adjust path here
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
